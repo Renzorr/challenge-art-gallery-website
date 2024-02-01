@@ -1,0 +1,50 @@
+---
+const { margin, light } = Astro.props;
+---
+
+<footer
+  class=`${light ? 'bg-pale-brown' : 'bg-black' } ${light ? ''  : 'text-white'}`
+>
+  <div
+    class=`container min-h-[245px] flex items-start ${margin ? 'mt-[181px]' : 'mt-0' } pt-[80px] pb-[50px] tablet:flex-col`
+  >
+    <img
+      src="/images/logo-light.svg"
+      alt="art gallery logo"
+      class=`mb-[30px] filter ${light ? 'brightness-[0%]' : ''}`
+    />
+    <p
+      class="w-full max-w-[430px] text-base leading-[28px] ml-[140px] mb-[50px] tablet:ml-0"
+    >
+      The Modern Art Gallery is free to all visitors and open seven days a week
+      from 8am to 9pm. Find us at 99 King Street, Newport, USA.F
+    </p>
+    <ul class="flex items-center gap-[20px] ml-auto tablet:ml-0">
+      <li>
+        <a href="#"
+          ><img
+            src="/images/icon-facebook.svg"
+            alt="facebook icon"
+            class=`filter ${light ? 'brightness-[0%]' : ''}`
+          /></a
+        >
+      </li>
+      <li>
+        <a href="#"
+          ><img
+            src="/images/icon-instagram.svg"
+            alt="instagram icon"
+            class=`filter ${light ? 'brightness-[0%]' : ''}`
+          /></a
+        >
+      </li>
+      <a href="#"
+        ><img
+          src="/images/icon-twitter.svg"
+          alt="twitter icon"
+          class=`filter ${light ? 'brightness-[0%]' : ''}`
+        /></a
+      >
+    </ul>
+  </div>
+</footer>

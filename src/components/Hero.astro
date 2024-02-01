@@ -1,0 +1,66 @@
+<main
+  class="relative before:w-[40%] before:h-full before:absolute before:top-0 before:left-0 before:bg-black before:z-[-1] desktop:before:hidden"
+>
+  <picture
+    class="absolute top-0 left-[50%] translate-x-[-50%] w-full max-w-[540px] z-[-1] desktop:left-[15%] tablet:static tablet:translate-x-0 tablet:max-w-max"
+  >
+    <source
+      media="(max-width: 820px )"
+      srcset="/images/mobile/image-hero@2x.jpg"
+    />
+    <img
+      src="/images/desktop/image-hero@2x.jpg"
+      alt="gallery picture"
+      class="w-full h-full object-cover"
+    />
+  </picture>
+  <section class="container">
+    <div
+      class="hero pt-[194px] pb-[314px] grid grid-cols-hero justify-between desktop:grid-cols-hero-responsive desktop:justify-end tablet:grid-cols-1 tablet:pt-[40px] tablet:pb-[150px]"
+    >
+      <h1
+        class="gradient text-3xl font-big-shoulder font-black uppercase leading-[clamp(60px,8cqw,85px)] mb-[40px]"
+      >
+        Modern Art Gallery
+      </h1>
+      <div>
+        <p
+          class="text-2lg tracking-[-0.1px] leading-[32px] mt-[-5px] mb-[65px] tablet:mb-[40px]"
+        >
+          The arts in the collection of the Modern Art Gallery all started from
+          a spark of inspiration. Will these pieces inspire you? Visit us and
+          find out.
+        </p>
+        <a
+          href="/Location"
+          class="group flex justify-between w-full max-w-[260px] h-[72px] text-white pl-[32px] bg-black hover:bg-pale-brown duration-200"
+        >
+          <span
+            class="font-big-shoulder tracking-[4px] text-lg uppercase py-[22px]"
+            >Our location</span
+          >
+          <div
+            class="w-[24.5%] grid place-content-center bg-pale-brown group-hover:bg-black duration-200"
+          >
+            <img src="/images/icon-arrow-right.svg" alt="" aria-hidden="true" />
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+</main>
+<style>
+  .gradient {
+    background: linear-gradient(to right, #ffffff 62.5%, #151515 62.5%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  @media (width < 1060px) {
+    .gradient {
+      background: #151515;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+</style>
